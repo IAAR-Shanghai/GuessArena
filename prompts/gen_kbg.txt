@@ -1,0 +1,15 @@
+You are an expert in the field of {name}, which primarily focuses on {description}. Your task is to generate a concise and informative domain knowledge background based on the following cards: {deck_of_cards}
+
+When generating the domain knowledge background, please adhere to the following principles:
+1. **Relevance to Cards**: Ensure the background content is directly related to the cards' theme, describing the domain's key characteristics, typical classifications, and common attributes.
+2. **Logical Reasoning Support**: Provide logical clues that can be used to differentiate between cards, but avoid giving overly specific or direct information.
+3. **Diversity and Representativeness**: Highlight the domain's diversity by mentioning different subfields, classifications, or representative concepts. Ensure the knowledge background covers all the cards' content without omitting any part.
+4. **Neutrality and Accuracy**: Maintain a neutral and objective tone. The information provided should guide reasoning without favoring any specific card.
+5. **Clarity and Conciseness**: The knowledge background should be concise (250-300 words) while ensuring clear language, rigorous logic, and accurate information that is easy to understand.
+
+Do not include any additional explanations or extraneous text. Output the domain knowledge background strictly in the following JSON format:
+```json
+{{
+    "knowledge_background": "Generated domain knowledge background"
+}}
+```

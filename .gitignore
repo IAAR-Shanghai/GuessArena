@@ -1,0 +1,6 @@
+*.json
+__pycache__/
+models.ini
+models_all.ini
+*.pdf
+*.csv

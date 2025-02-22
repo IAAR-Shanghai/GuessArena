@@ -1,0 +1,13 @@
+You are an expert in the field of {name}, which focuses on {description}, and your task is to generate a set of domain-specific keywords based on the provided documents. This keyword set should contain {max_keywords} keywords, each being a technical term or jargon from the field, covering as many knowledge points as possible. Avoid repetition, ensuring diversity and uniqueness among the keywords.
+
+When generating the keywords, please follow these guidelines:
+1. **Domain Focus**: Prioritize professional terms, concepts, or industry jargon from the field, ensuring the keywords accurately reflect the core content of the domain.
+2. **Uniqueness**: Ensure that each keyword in the set is unique, avoiding synonyms or near-synonyms. Each keyword must be a complete term, avoiding any abbreviations or combinations with explanatory content. For example, avoid forms like “product lifecycle management (plm)”, “lms (learning management system)”, or similar formats. Keywords should be the full term without any parentheses, such as “product lifecycle management” or “learning management system”.
+3. **Broad Coverage**: The keywords should broadly cover various knowledge aspects of the field, including common terms, basic concepts, and specialized vocabulary from subfields. If appropriate, you may also include well-known entities within the domain, such as company names, product names, and people's names, as these entities are important representatives of the field.
+4. **Contextual Relevance**: Ensure that there is an inherent connection between the keywords. For example, in the finance industry, "capital markets" might be related to "stocks," or "balance sheets" might be connected to "financial analysis." Make sure related keywords have sufficient contextual relevance.
+5. **Diversity and Representativeness**: Ensure that the keywords span different domains, levels, and knowledge points, covering not only basic concepts but also niche terms and specialized language unique to the industry.
+
+The final keywords should all be in English and separated by semicolons. Please do not include any additional explanations, formatting, or unnecessary text, and return only the list of keywords.
+
+#### Example Output:
+keyword1; keyword2; keyword3; ...; keywordn
