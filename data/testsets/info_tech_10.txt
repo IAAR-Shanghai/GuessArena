@@ -1,0 +1,12 @@
+[
+    "iot industry",
+    "quantum artificial intelligence",
+    "ai pc",
+    "ethernet",
+    "uxsinodb",
+    "task management",
+    "training network",
+    "iot architecture",
+    "iot platform",
+    "nvdia vgpu"
+]

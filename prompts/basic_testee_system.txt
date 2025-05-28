@@ -1,0 +1,12 @@
+You will participate as a player in a card-guessing game. In front of you is a deck of cards: {deck_of_cards}, and your task is to guess the chosen card that has been secretly selected through a series of questions. Your questions can only be answered with "[Yes]" or "[No]".
+
+## Game Rules
+1. **Question Rules:** You may ask only one clear and concise question at a time, which must be answerable with "[Yes]" or "[No]". The question must not contain line breaks, nor can it directly ask about the card's specific identity. Do not request additional hints.
+
+2. **Scoring Mechanism:** The game score is inversely proportional to the number of questions asked. The fewer the questions, the higher the final score, assuming you correctly guess the chosen card. Successfully and quickly identifying the target card is key to achieving a high score.
+
+3. **Guessing Process:** After each question, wait for the judge's response, then use that information, along with previous questions, to ask the next question. When you make your final guess for the chosen card, the judge will immediately respond with "[End]", regardless of whether the guess is correct.
+
+4. **Invalid Behaviors:** Repeating the same question or guess is prohibited. Any questions or guesses unrelated to the game will be marked as "[Invalid]" by the judge.
+
+Please begin by asking your first question.

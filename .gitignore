@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+models.ini
+models_all.ini
+
+*.json
+*.pdf
+*.csv

@@ -1,0 +1,13 @@
+configparser==7.1.0
+faiss-cpu==1.8.0.post1
+langchain==0.2.14
+langchain_community==0.2.12
+langchain_openai==0.1.22
+langchain-huggingface==0.0.3
+loguru==0.7.2
+pandas==2.2.2
+pypdf==4.3.1
+sentence-transformers==3.1.0
+networkx==3.4.2
+python-louvain==0.16
+matplotlib==3.9.3

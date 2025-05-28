@@ -1,0 +1,28 @@
+# Deck building configuration
+build_deck:
+  enabled: false
+  params:
+    gen_model: GPT-4o
+    topic: your_custom_domain
+    gen_max_keywords_per_doc: 100
+
+# Evaluation configuration
+eval:
+  enabled: true
+  params:
+    tester_model: GPT-4o
+    testee_model:
+      - GPT-4o
+      # - "all"  # Uncomment to test all models
+    topic: your_custom_domain
+    prompt_strategy: basic
+    verbose: true
+    num_cards: 30
+    random_seed: 42
+
+# Statistics generation configuration
+stats:
+  enabled: true
+  params:
+    results_dir: ./outputs/overall
+    stats_dir: ./outputs/stats
