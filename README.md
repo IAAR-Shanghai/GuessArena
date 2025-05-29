@@ -74,6 +74,7 @@ $ vim models.ini # Edit the file to configure the models you want to use
 ### Evaluate with Predefined Domains
 
 - Download the predefined datasets from Google Drive:
+
 > GuessArena provides predefined datasets for five key domains: finance, healthcare, manufacturing, information technology, and education. You can download these datasets from Google Drive. The datasets include domain-specific documents, card packages, and test sets that are ready to use for evaluation.
 
 ```bash
@@ -81,16 +82,28 @@ $ wget https://drive.google.com/uc?id=1ZJdb8UJZRlnceYDkGKv5Hc_LxZ3T8hR_ -O prede
 $ unzip predefined_domains.zip -d data
 ```
 
+> Place the downloaded datasets in the `data` directory, and set up the `configs/ind_docs.ini` file to point to the correct document directories.
+
 - Run the build script to prepare the evaluation cards:
 
 ```bash
-$ python cli.py build_deck --gen_model GPT-4o --topic info_tech --gen_max_keywords_per_doc 100
+$ python cli.py build_deck \
+    --gen_model GPT-4o \
+    --topic info_tech \
+    --gen_max_keywords_per_doc 100
 ```
 
 - Run the evaluation script for predefined domains:
 
 ```bash
-$ python cli.py eval --tester_model GPT-4o --testee_model GPT-4o --topic info_tech --prompt_strategy basic --verbose --num_cards 30 --random_seed 42
+$ python cli.py eval \
+    --tester_model GPT-4o \
+    --testee_model GPT-4o \
+    --topic info_tech \
+    --prompt_strategy basic \
+    --verbose \
+    --num_cards 30 \
+    --random_seed 42
 ```
 
 - Run the statistics script to analyze the evaluation results:
@@ -100,14 +113,18 @@ $ python cli.py stats
 ```
 
 ### Evaluate with Custom Domains
+
 > GuessArena allows you to evaluate LLMs in custom domains by creating your own evaluation cards based on domain-specific documents. This enables you to assess LLMs in areas that are not covered by the predefined domains.
 
-- Place your custom domain documents (PDF, HTML, or text files) in the `data/documents/your_custom_domain` directory.
+> Place your custom domain documents (PDF, HTML, or text files) in the `data/documents/your_custom_domain` directory, and set up the `configs/ind_docs.ini` file to point to the correct document directory.
 
-> Run the build script to prepare the evaluation cards for your custom domain:
+- Run the build script to prepare the evaluation cards for your custom domain:
 
 ```bash
-$ python cli.py build_deck --gen_model GPT-4o --topic your_custom_domain --gen_max_keywords_per_doc 100
+$ python cli.py build_deck \
+    --gen_model GPT-4o \
+    --topic your_custom_domain \
+    --gen_max_keywords_per_doc 100
 ```
 
 - Alternatively, you can create a custom test set file in `data/testsets/your_custom_domain.txt` with the following format:
@@ -125,7 +142,14 @@ $ python cli.py build_deck --gen_model GPT-4o --topic your_custom_domain --gen_m
 - Run the evaluation script for your custom domain:
 
 ```bash
-$ python cli.py eval --tester_model GPT-4o --testee_model GPT-4o --topic your_custom_domain --prompt_strategy basic --verbose --num_cards 30 --random_seed 42
+$ python cli.py eval \
+    --tester_model GPT-4o \
+    --testee_model GPT-4o \
+    --topic your_custom_domain \
+    --prompt_strategy basic \
+    --verbose \
+    --num_cards 30 \
+    --random_seed 42
 ```
 
 ### Run with YAML Configuration
