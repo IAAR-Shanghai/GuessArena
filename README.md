@@ -139,5 +139,10 @@ $ python cli.py run --config scripts/example.yaml
 ## 📄 Citation
 
 ```
-
+@article{GuessArena,
+      title={GuessArena: Guess Who I Am? A Self-Adaptive Framework for Evaluating LLMs in Domain-Specific Knowledge and Reasoning},
+      author={Qingchen Yu and Zifan Zheng and Ding Chen and Simin Niu and Bo Tang and Feiyu Xiong and Zhiyu Li},
+      journal={arXiv preprint arXiv:2505.22661},
+      year={2025},
+}
 ```
