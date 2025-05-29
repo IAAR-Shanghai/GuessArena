@@ -116,6 +116,8 @@ $ python cli.py stats
 
 > GuessArena allows you to evaluate LLMs in custom domains by creating your own evaluation cards based on domain-specific documents. This enables you to assess LLMs in areas that are not covered by the predefined domains.
 
+- Set up your custom domain:
+
 > Place your custom domain documents (PDF, HTML, or text files) in the `data/documents/your_custom_domain` directory, and set up the `configs/ind_docs.ini` file to point to the correct document directory.
 
 - Run the build script to prepare the evaluation cards for your custom domain:
