@@ -12,32 +12,6 @@ from src.utils.project_structure import DIRECTORIES, ensure_project_structure
 MODELS_CONFIG = "./configs/models.ini"
 
 
-def migrate_legacy_files():
-    """Migrate files from legacy locations to the new project structure."""
-    ensure_project_structure()
-
-    # Migrate card packs
-    legacy_packs_dir = Path("packs")
-    if legacy_packs_dir.exists():
-        for file in legacy_packs_dir.glob("deck_*.json"):
-            # Extract topic from filename
-            filename = file.name
-            if filename.startswith("deck_"):
-                parts = filename[5:].split("_")
-                topic = parts[0]
-
-                # Determine the new path
-                new_path = DIRECTORIES["CARDS"] / f"{topic}_cards.json"
-
-                # Copy the file if it doesn't already exist
-                if not new_path.exists():
-                    os.makedirs(new_path.parent, exist_ok=True)
-                    shutil.copy2(file, new_path)
-                    print(f"Migrated {file} to {new_path}")
-
-    # Add other migrations as needed
-
-
 def parse_args():
     parser = argparse.ArgumentParser(description="Run a game simulation.")
 
