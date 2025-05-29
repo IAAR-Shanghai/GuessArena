@@ -4,7 +4,7 @@
 
 
 <p align="center">
-    <a href="">
+    <a href="https://arxiv.org/abs/2505.22661">
         <img src="https://img.shields.io/badge/arXiv-Paper-8B0000?style=flat-square&logo=arxiv&logoColor=white">
     </a>
     <a href="https://opensource.org/license/apache-2-0">
@@ -117,15 +117,14 @@ $ python cli.py build_deck --gen_model GPT-4o --topic your_custom_domain --gen_m
     "keyword1",
     "keyword2",
     "keyword3",
-    ...
+    "...",
     "keywordN"
 ]
 ```
 
 - Run the evaluation script for your custom domain:
 
-```
-bash
+```bash
 $ python cli.py eval --tester_model GPT-4o --testee_model GPT-4o --topic your_custom_domain --prompt_strategy basic --verbose --num_cards 30 --random_seed 42
 ```
 
