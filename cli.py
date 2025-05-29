@@ -1,13 +1,8 @@
 import argparse
 import configparser
-import os
-import shutil
-from pathlib import Path
 
 import yaml
 from loguru import logger
-
-from src.utils.project_structure import DIRECTORIES, ensure_project_structure
 
 MODELS_CONFIG = "./configs/models.ini"
 
