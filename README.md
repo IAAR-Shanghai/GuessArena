@@ -162,6 +162,13 @@ $ python cli.py eval \
 $ python cli.py run --config scripts/example.yaml
 ```
 
+## 📊 Results
+
+<div align="center">
+    <img src="./assets/results.png" alt="GuessArena Results" width="100%">
+</div>
+
+
 ## 📄 Citation
 
 ```
