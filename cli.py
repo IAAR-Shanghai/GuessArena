@@ -153,8 +153,6 @@ if __name__ == "__main__":
     args = parse_args()
     logger.info(f"Start CLI with args: {args}")
 
-    migrate_legacy_files()
-
     if args.config:
         # Run operations from unified YAML configuration
         config = read_yaml_config(args.config)
