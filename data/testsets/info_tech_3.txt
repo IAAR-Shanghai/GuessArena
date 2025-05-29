@@ -1,5 +1,0 @@
-[
-    "industrial iot",
-    "iot industry",
-    "iot market development"
-]
