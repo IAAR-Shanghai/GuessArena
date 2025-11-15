@@ -1,6 +1,6 @@
-<h1 align="center">
+<h2 align="center">
     GuessArena: Guess Who I Am? A Self-Adaptive Framework for Evaluating LLMs in Domain-Specific Knowledge and Reasoning
-</h1>
+</h2>
 
 
 <div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; margin-top: 8px;">
@@ -14,7 +14,10 @@
         <img src="https://img.shields.io/badge/License-Apache_2.0-6A5ACD?style=flat-square&logo=apache&logoColor=white" alt="Apache 2.0 License" style="height: 20px;">
     </a>
     <a href="https://github.com/IAAR-Shanghai/GuessArena" target="_blank">
-        <img src="https://img.shields.io/badge/GitHub-Repo-1A1A1A?style=flat-square&logo=github&logoColor=white" alt="GitHub Repo" style="height: 20px;">
+        <img src="https://img.shields.io/badge/Code-Repo-1A1A1A?style=flat-square&logo=github&logoColor=white" alt="Code Repo" style="height: 20px;">
+    </a>
+    <a href="https://github.com/Duguce/GuessArena-Demo" target="_blank">
+        <img src="https://img.shields.io/badge/Demo-Repo-3448C5?style=flat-square&logo=github&logoColor=white" alt="Demo Repo" style="height: 20px;">
     </a>
 </div>
 
@@ -26,7 +29,7 @@
 > 🌟 Love GuessArena? Star our project on GitHub to get instant updates and show your support!
 
 
-## 🗺️ Overview
+### 🗺️ Overview
 
 <div align="center">
     <img src="./assets/framework.png" alt="GuessArena" width="100%">
@@ -45,7 +48,7 @@ The key contributions of GuessArena are as follows:
 - **Comprehensive Evaluation Across Five Key Industries**: GuessArena demonstrates its applicability by evaluating state-of-the-art LLMs in finance, healthcare, manufacturing, information technology, and education. The entire evaluation framework and benchmark dataset are open-sourced to facilitate future research.
 
 
-## ⚙️ Installation
+### ⚙️ Installation
 
 - Clone the repository:
 
@@ -74,9 +77,9 @@ $ mv models_example.ini models.ini
 $ vim models.ini # Edit the file to configure the models you want to use
 ```
 
-## 🚀 Usage
+### 🚀 Usage
 
-### Evaluate with Predefined Domains
+#### Evaluate with Predefined Domains
 
 - Download the predefined datasets from Google Drive:
 
@@ -117,7 +120,7 @@ $ python cli.py eval \
 $ python cli.py stats
 ```
 
-### Evaluate with Custom Domains
+#### Evaluate with Custom Domains
 
 > GuessArena allows you to evaluate LLMs in custom domains by creating your own evaluation cards based on domain-specific documents. This enables you to assess LLMs in areas that are not covered by the predefined domains.
 
@@ -159,7 +162,7 @@ $ python cli.py eval \
     --random_seed 42
 ```
 
-### Run with YAML Configuration
+#### Run with YAML Configuration
 
 > You can also run the card generation and evaluation using a YAML configuration file. Refer to `scripts/example.yaml` for an example configuration file, and then run the following command:
 
@@ -167,20 +170,38 @@ $ python cli.py eval \
 $ python cli.py run --config scripts/example.yaml
 ```
 
-## 📊 Results
+### 📊 Results
 
 <div align="center">
     <img src="./assets/results.png" alt="GuessArena Results" width="100%">
 </div>
 
 
-## 📄 Citation
+### 📄 Citation
 
 ```
-@article{GuessArena,
-      title={GuessArena: Guess Who I Am? A Self-Adaptive Framework for Evaluating LLMs in Domain-Specific Knowledge and Reasoning},
-      author={Qingchen Yu and Zifan Zheng and Ding Chen and Simin Niu and Bo Tang and Feiyu Xiong and Zhiyu Li},
-      journal={arXiv preprint arXiv:2505.22661},
-      year={2025},
+@inproceedings{
+    GuessArena,
+    title = "{G}uess{A}rena: Guess Who {I} Am? A Self-Adaptive Framework for Evaluating {LLM}s in Domain-Specific Knowledge and Reasoning",
+    author = "Yu, Qingchen  and
+      Zheng, Zifan  and
+      Chen, Ding  and
+      Niu, Simin  and
+      Tang, Bo  and
+      Xiong, Feiyu  and
+      Li, Zhiyu",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.534/",
+    doi = "10.18653/v1/2025.acl-long.534",
+    pages = "10897--10912",
+    ISBN = "979-8-89176-251-0",
 }
 ```
